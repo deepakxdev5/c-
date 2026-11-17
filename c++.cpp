@@ -5,21 +5,18 @@ class Student
 private:
  int rollNo;
  string name;
-public:
- // Constructor 
+public:
  Student(int r, string n)
  {
  rollNo = r;
  name = n;
  cout << "Student object created" << endl;
- }
- // Member function
+ }
  void display()
  {
  cout << "Roll Number: " << rollNo << endl;
  cout << "Name: " << name << endl;
- }
- // Destructor
+ }
  ~Student()
  {
  cout << "Student object destroyed" << endl;
