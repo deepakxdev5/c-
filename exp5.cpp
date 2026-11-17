@@ -17,8 +17,7 @@ int main()
  {"Bala", 72, ' '},
  {"Kumar", 91, ' '},
  {"Ravi", 65, ' '}
- };
- // Sort students based on marks
+ };
  sort(students.begin(), students.end(),
  [](Student a, Student b)
  {
@@ -38,14 +37,12 @@ int main()
  else
  s.grade = 'F';
  return s;
- });
- // Find first student scoring above 80
+ });
  auto it = find_if(students.begin(), students.end(),
  [](Student s)
  {
  return s.mark > 80;
- });
- // Calculate total marks using accumulate
+ });
  int total = accumulate(students.begin(), students.end(), 0,
  [](int sum, Student s)
  {
