@@ -13,7 +13,7 @@ public:
  data[1][0] = c;
  data[1][1] = d;
  }
- // Operator +
+ 
  Matrix operator+(const Matrix &m)
  {
  Matrix result;
